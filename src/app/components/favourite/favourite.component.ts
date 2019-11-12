@@ -3,8 +3,7 @@ import { Joke } from '../../models/Joke.model';
 
 @Component({
   selector: 'app-favourite',
-  templateUrl: './favourite.component.html',
-  styleUrls: ['./favourite.component.css']
+  templateUrl: './favourite.component.html'
 })
 
 export class FavouriteComponent implements OnInit, OnChanges {
