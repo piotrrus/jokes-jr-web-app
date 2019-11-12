@@ -1,0 +1,40 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'toast.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Tahoma', 'Roboto', arial, sans-serif;
+}
+
+body {
+  background: #4e5a71;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  font-family: 'Tahoma', 'Roboto', sans-serif;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-backface-visibility: hidden;
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.right {
+  float: right;
+}
+
+.mat-elevation-z2 {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.favourite {
+  margin-top: 15px;
+}
