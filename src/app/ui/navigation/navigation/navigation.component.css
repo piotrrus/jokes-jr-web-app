@@ -1,0 +1,43 @@
+.header {
+  /* background-color: #1C3A5C; */
+  background-color: rgba(12, 20, 66, 0.5);
+  height: 50px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.menu {
+  float: right;
+  margin-top: 5px;
+}
+
+.navbar-brand {
+  margin-top: 11px;
+  font-family: 'Lucida Sans';
+  font-size: 20px;
+}
+
+#logo img {
+  float: none;
+  margin: 0px;
+  margin-left: 8px;
+}
+
+.nav-original {
+  background-color: #1c3a5c;
+}
+
+.nav-wrapper {
+  color: #fff;
+}
+
+.mat-fab.mat-blue,
+.mat-mini-fab.mat-blue,
+.mat-raised-button.mat-blue {
+  background-color: #1c3a5c;
+}
+.mat-fab.mat-grey,
+.mat-mini-fab.mat-grey,
+.mat-raised-button.mat-grey {
+  background-color: #ddd;
+}

@@ -1,0 +1,35 @@
+<ng-container *ngIf="favouriteJokes.length > 0" class="favourite">
+    <div fxLayout="row">
+      <div fxFlex="100%">
+        <h1>List of favourite jokes:</h1>
+      </div>
+    </div>
+  
+    <div
+      class="example-container mat-elevation-z2"
+      *ngFor="let jokes of favouriteJokes">
+      <div class="example-header">
+        <div fxLayout="row">
+          <div fxFlex="70%">
+            {{ jokes.joke }}
+            <p class="small">{{ jokes.url }}</p>
+          </div>
+          <div fxFlex="15%">
+            {{ jokes.date }}
+          </div>
+  
+          <div fxFlex="15%">
+            <star-rating
+              value="{{ jokes.rating }}"
+              checkedcolor="green"
+              uncheckedcolor="grey"
+              size="24px"
+              readonly="true">
+            </star-rating>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  

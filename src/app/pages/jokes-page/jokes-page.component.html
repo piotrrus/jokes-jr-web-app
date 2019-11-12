@@ -1,0 +1,54 @@
+<div class="example-container mat-elevation-z2">
+      <div class="example-header">
+        <div fxLayout="row">
+          <div fxFlex="75%">
+            <h1>Joke:</h1>
+            <p>{{ jokeData.created_at | date: 'dd.MM.yyyy' }}</p>
+            <p>{{ jokeData.value | uppercase }}</p>
+            <star-rating
+              *ngIf="!error"
+              value="{{ rate }}"
+              checkedcolor="green"
+              uncheckedcolor="grey"
+              size="24px"
+              readonly="false"
+              (rate)="onRate($event)">
+            </star-rating>
+          </div>
+
+          <div fxFlex="25%">
+            <button
+              *ngIf="!error"
+              mat-raised-button
+              color="primary"
+              [disabled]="jokeExist"
+              (click)="addToFavourite()">
+              Add to favourite
+            </button>
+            <button
+              class="right"
+              mat-raised-button
+              color="primary"
+              (click)="getRandomJoke()">
+              Next joke
+            </button>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- <div fxLayout="row">
+      <div fxFlex="90%">
+        <h1>List of favourite jokes:</h1>
+      </div>
+      <div fxFlex="10%">
+        <button mat-raised-button color="primary" (click)="clearAll()">
+          Clear all
+        </button>
+      </div>
+  </div> -->
+
+  <div class="favourite">
+    <app-favourite [favouriteJokes]="favouriteJokes"></app-favourite>
+  </div>
+

@@ -1,0 +1,18 @@
+.mat-fab.mat-primary,
+.mat-flat-button.mat-primary,
+.mat-mini-fab.mat-primary,
+.mat-raised-button.mat-primary {
+  background-color: #3e4363;
+  min-width: 140px;
+  margin-right: 10px;
+}
+
+.mat-header-row {
+  background: rgba(29, 32, 56, 0.26);
+}
+
+p {
+  color: #7a7a7a;
+  font-size: 14px;
+  line-height: 24px;
+}
